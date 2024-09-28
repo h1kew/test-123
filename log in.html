@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Початок блоку з контактною інформацією -->
+    <div class="contact-info">
+        <p><img src="email-icon.png" alt="Email Icon"><span class="underline"> horizonpath.eld@gmail.com</span></p>
+        <p><img src="website-icon.png" alt="Website Icon"><span class="underline"> www.horizonpath.com</span></p>
+    </div>
+    <!-- Кінець блоку з контактною інформацією -->
+
+    <div class="container">
+        <div class="form-container">
+            <h2>Login</h2>
+            <div class="form-wrapper">
+                <form>
+                    <label for="email">Email <span>*</span></label>
+                    <input type="email" id="email" placeholder="Email" required>
+
+                    <label for="password">Password <span>*</span></label>
+                    <small class="password-instruction">
+                        Password must be min 8 characters long, contain at least one digit, one uppercase and lowercase letter, and one special character.
+                    </small>
+                    <div class="password-container">
+                        <input type="password" id="password" placeholder="Password" required>
+                        <span class="toggle-password" onclick="togglePassword('password')">&#128065;</span>
+                    </div>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <p class="login-redirect">You don't have an account? Go to <a href="sign-up.html">sign up</a> page.</p>
+            <p class="login-redirect">Forgot password? Go to <a href="reset-password.html">reset password</a> page.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

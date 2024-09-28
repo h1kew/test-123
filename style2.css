@@ -1,0 +1,200 @@
+/* Базові стилі */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, input, button, h2, h3, p, a {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url('Truck.jpg'); /* Постав своє зображення */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Контактна інформація */
+.contact-info {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-align: right;
+    color: white;
+    font-size: 14px;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-info img {
+    width: 25px;
+    margin-right: 8px;
+}
+
+/* Підкреслення для тексту контактної інформації */
+.underline {
+    text-decoration: underline;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 30px 40px; /* Збільшені падінги для центрування */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    max-width: 450px;
+    width: 100%;
+    margin: auto;
+}
+
+.form-container {
+    text-align: center;
+}
+
+h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.form-wrapper {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрування всіх елементів */
+}
+
+form label {
+    width: 100%; /* Зробити ширину лейблів 100% */
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+    text-align: left; /* Вирівнювання тексту лейблів */
+}
+
+form label span {
+    color: red;
+}
+
+form input {
+    width: 100%; /* Зробити ширину полів на 100% */
+    padding: 12px; /* Трохи більший падінг */
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.password-container {
+    position: relative;
+    width: 100%; /* Залишити всю ширину контейнера */
+}
+
+.password-container input {
+    width: 100%; /* Поле займає всю ширину */
+    padding-right: 45px; /* Додатковий простір для іконки ока */
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px; /* Відступ від правого краю поля */
+    top: 50%; /* Вирівнювання по вертикалі */
+    transform: translateY(-50%); /* Центрування вертикально */
+    cursor: pointer;
+    color: #333;
+    font-size: 20px; /* Розмір іконки */
+    height: 20px; /* Висота іконки */
+    width: 20px; /* Ширина іконки */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Стиль для тексту підказки */
+.password-instruction {
+    width: 100%;
+    text-align: left; /* Вирівняти текст підказки ліворуч */
+    font-size: 11px; /* Зменшений розмір шрифту */
+    color: #666; /* Темний сірий колір */
+    margin-top: 5px; /* Відступ зверху */
+    margin-bottom: 5px; /* Відступ знизу */
+    line-height: 1.2; /* Щільний міжрядковий інтервал */
+    display: block;
+}
+
+.login-redirect {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.login-redirect a {
+    color: blue;
+    text-decoration: underline;
+}
+
+.login-redirect a:hover {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Адаптивні стилі */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    form input {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .contact-info {
+        font-size: 12px;
+    }
+
+    .contact-info img {
+        width: 14px;
+    }
+}
+
+
