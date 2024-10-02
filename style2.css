@@ -10,7 +10,7 @@ body, input, button, h2, h3, p, a {
 }
 
 body {
-    background-image: url('Truck.jpg'); /* Постав своє зображення */
+    background-image: url('images/Truck.jpg'); /* Постав своє зображення */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -110,7 +110,7 @@ form input {
 .toggle-password {
     position: absolute;
     right: 10px; /* Відступ від правого краю поля */
-    top: 50%; /* Вирівнювання по вертикалі */
+    top: 40%; /* Вирівнювання по вертикалі */
     transform: translateY(-50%); /* Центрування вертикально */
     cursor: pointer;
     color: #333;

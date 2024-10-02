@@ -6,13 +6,12 @@
     <title>Sign Up</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
 </head>
 <body>
     <!-- Початок блоку з контактною інформацією -->
     <div class="contact-info">
-        <p><img src="email-icon.png" alt="Email Icon"><span class="underline"> horizonpath.eld@gmail.com</span></p>
-        <p><img src="website-icon.png" alt="Website Icon"><span class="underline"> www.horizonpath.com</span></p>
+        <p><img src="images/email-icon.png" alt="Email Icon"><span class="underline"> <a href="mailto:horizonpath.eld@gmail.com">horizonpath.eld@gmail.com</a></span></p>
+        <p><img src="images/website-icon.png" alt="Website Icon"><span class="underline"> www.horizonpath.com</span></p>
     </div>
     <!-- Кінець блоку з контактною інформацією -->
 
@@ -22,7 +21,7 @@
             <div class="form-wrapper">
                 <div class="account-info">
                     <h3>Account information</h3>
-                    <form>
+                    <form id="sign-up-form">
                         <label for="first-name">First name <span>*</span></label>
                         <input type="text" id="first-name" placeholder="First name" required>
 
@@ -36,15 +35,21 @@
                         <input type="tel" id="phone" placeholder="+1 (888) 888 - 88 - 88" required>
 
                         <label for="password">Password <span>*</span></label>
-                        <input type="password" id="password" placeholder="Password" required>
-                        <!-- Додано текстовий опис під полем Password -->
+                        <div class="password-container">
+                            <input type="password" id="password" placeholder="Password" required>
+                            <span class="toggle-password" onclick="togglePassword('password')">&#128065;</span>
+                        </div>
                         <small class="password-instruction">
                             Password must be min 8 characters long, must contain at least one digit, one uppercase and lowercase letter and at least one special character.
                         </small>
 
                         <label for="password-confirm">Password confirm <span>*</span></label>
-                        <input type="password" id="password-confirm" placeholder="Password confirm" required>
+                        <div class="password-container">
+                            <input type="password" id="password-confirm" placeholder="Password confirm" required>
+                            <span class="toggle-password" onclick="togglePassword('password-confirm')">&#128065;</span>
+                        </div>
 
+                        <button type="submit">Save</button>
                         <p class="login-redirect">Already have an account? Go to <a href="login.html">login page</a>.</p>
                     </form>
                 </div>
@@ -68,7 +73,6 @@
                             <option value="" disabled selected>Pick one</option>
                             <option value="CA">California</option>
                             <option value="NY">New York</option>
-                            <!-- Add more states here -->
                         </select>
 
                         <label for="zip-code">Zip code <span>*</span></label>
@@ -79,16 +83,16 @@
                             <option value="" disabled selected>Pick one</option>
                             <option value="PST">PST</option>
                             <option value="EST">EST</option>
-                            <!-- Add more time zones here -->
                         </select>
                     </form>
                 </div>
             </div>
-            <button type="submit">Save</button>
         </div>
     </div>
+    <script src="script2.js"></script>
 </body>
 </html>
+
 
 
 

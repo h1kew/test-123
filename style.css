@@ -12,7 +12,7 @@ body, input, button, h2, h3, p, a {
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url('Truck.jpg'); /* Постав своє зображення */
+    background-image: url('images/Truck.jpg'); /* Постав своє зображення */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -96,6 +96,31 @@ form label {
 
 form label span {
     color: red;
+}
+
+.password-container {
+    position: relative;
+    width: 100%; /* Залишити всю ширину контейнера */
+}
+
+.password-container input {
+    width: 100%; /* Поле займає всю ширину */
+    padding-right: 45px; /* Додатковий простір для іконки ока */
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px; /* Відступ від правого краю поля */
+    top: 40%; /* Вирівнювання по вертикалі */
+    transform: translateY(-50%); /* Центрування вертикально */
+    cursor: pointer;
+    color: #333;
+    font-size: 20px; /* Розмір іконки */
+    height: 20px; /* Висота іконки */
+    width: 20px; /* Ширина іконки */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Стиль для тексту-підказки під полем Password */
